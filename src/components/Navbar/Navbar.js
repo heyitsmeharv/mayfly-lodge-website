@@ -15,6 +15,10 @@ const NavButton = styled.button`
   :hover {
     cursor: pointer;
   }
+  @media only screen and (max-width: 600px) {
+    margin: 0 2%;
+    font-size: 1.6rem;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`

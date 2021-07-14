@@ -14,11 +14,21 @@ const StyledImage = styled.img`
 const Title = styled(Box)`
   font-family: 'norwester';
   font-size: 10rem;
+  width: 100%;
   position: absolute;
   top: 12%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  @media only screen and (max-width: 1280px) {
+    font-size: 8.5rem;
+  }
+  @media only screen and (max-width: 960px) {
+    font-size: 8rem;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 6rem;
+  }
 `;
 
 const SubTitle = styled(Title)`
@@ -28,6 +38,15 @@ const SubTitle = styled(Title)`
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  @media only screen and (max-width: 1280px) {
+    font-size: 3.5rem;
+  }
+  @media only screen and (max-width: 960px) {
+    font-size: 3rem;
+  }
+  @media only screen and (max-width: 600px) {
+    font-size: 2.5rem;
+  }
 `;
 
 
