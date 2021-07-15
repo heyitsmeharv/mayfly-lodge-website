@@ -9,6 +9,7 @@ import { Box } from '@material-ui/core';
 
 const StyledImage = styled.img`
   opacity: 0.8;
+  width: 100%;
 `;
 
 const Title = styled(Box)`
@@ -21,13 +22,20 @@ const Title = styled(Box)`
   transform: translate(-50%, -50%);
   color: white;
   @media only screen and (max-width: 1280px) {
+    top: 20%;
     font-size: 8.5rem;
   }
   @media only screen and (max-width: 960px) {
+    top: 20%;
     font-size: 8rem;
   }
   @media only screen and (max-width: 600px) {
+    top: 25%;
     font-size: 6rem;
+  }
+  @media only screen and (max-width: 500px) {
+    top: 20%;
+    font-size: 3rem;
   }
 `;
 
@@ -39,13 +47,20 @@ const SubTitle = styled(Title)`
   transform: translate(-50%, -50%);
   color: white;
   @media only screen and (max-width: 1280px) {
+    top: 40%;
     font-size: 3.5rem;
   }
   @media only screen and (max-width: 960px) {
+    top: 50%;
     font-size: 3rem;
   }
   @media only screen and (max-width: 600px) {
+    top: 60%;
     font-size: 2.5rem;
+  }
+  @media only screen and (max-width: 500px) {
+    top: 70%;
+    font-size: 2rem;
   }
 `;
 
